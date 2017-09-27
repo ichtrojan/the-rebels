@@ -43,10 +43,10 @@
             <div class="content container">
                 <div class="row">
                     <div class="col-xs-6">
-                        <img class="footer-logo" src="public/img/logo-dark.png" alt="flameonepage Logo">
+                        <img class="footer-logo" src="public/svg/logo.svg" alt="flameonepage Logo">
                     </div>
                     <div class="col-xs-6 text-right">
-                        <p class="margin-b-0"><a class="fweight-700" href="#">FlameOnePage</a> Theme Powered by: <a class="fweight-700" href="http://ft-seo.ch/">FairTech Studio</a></p>
+                        <p class="margin-b-0"><a class="fweight-700" href="#">HNG Internship </a> Theme Powered by: <a class="fweight-700" href="http://hng.fun/">The-Rebels</a></p>
                     </div>
                 </div>
                 <!--// end row -->
