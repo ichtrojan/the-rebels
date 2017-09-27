@@ -1,43 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Third party upload packages..</title>
-	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="public/fonts/css/font-awesome.css">
-	<script type="text/javascript" src="public/js/jquery.js"></script>
-	<script type="text/javascript" src="public/js/bootstrap.js"></script>
-</head>
-<body>
-	<nav class="navbar navbar-inverse">
-		<div class="container">
-	      <div class="navbar-header">
-	        <a class="navbar-brand" href="#"> <span><img src="img/logo.png" alt=""></span>PaysFund</a>
-	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-	          aria-controls="navbar">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	      </div>
-	      <ul class="nav navbar-nav">
-	        <li><a href="/"><i class="fa fa-home"></i> Page 1</a></li>
-	        <li><a href="/"><i class="fa fa-home"></i> page 2</a></li>
-	        <li><a href="/"><i class="fa fa-home"></i> page 3</a></li>
-	        <li><a href="/"><i class="fa fa-home"></i> page 4</a></li>
-	      </ul>
-		</div>
-	</nav>
 
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<span class="small">&copy; 2017 by The Rebels</span>
-				</div>
-			</div>
-		</div>
-	</div>
+<html lang="en" class="no-js">
 
-</body>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Holidays and Vacation Packages</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description"/>
+        <meta content="FairTech" name="author"/>
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="public/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="public/css/animate.css" rel="stylesheet">
+        <link href="public/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="public/css/layout.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="public/favicon.ico"/>
+    </head>
+
+    <body id="body" data-spy="scroll" data-target=".header">
+    	<?php include 'includes/navigation.php';?>
+        <?php include 'includes/slider.php';?>
+        <?php include 'includes/products.php';?>
+        <?php include 'includes/pricing.php';?>
+        <?php include 'includes/footer.php';?>
+    </body>
 </html>
