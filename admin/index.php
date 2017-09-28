@@ -17,17 +17,10 @@
         <link href="../public/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
         <link href="../public/css/layout.min.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="../public/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="../public/css/mix.css">
     </head>
 
     <body id="body" data-spy="scroll" data-target=".header">
-        <style type="text/css">
-            .dino-input {
-                padding: 0.8em;
-                border-radius: 4px;
-                border: 1px solid #999;
-            }
-        </style>
-
         <div class="content-lg container">
             <div class="row">
                 <div class="col-md-8">
@@ -86,22 +79,21 @@
                             <div class="row">
                                 <div class="col-sm-2">Package Location</div>
                                 <div class="col-sm-6">
-                                   <textarea class="dino-input" name="package_location" cols="60" rows="2" placeholder="Location here" required="">
-                                   </textarea>
+                                   <textarea class="dino-input" name="package_location" cols="60" rows="2" placeholder="Location " required=""></textarea>
                                 </div>
                             </div><br />
 
                             <div class="row">
                                 <div class="col-sm-2">Package Duration</div>
                                 <div class="col-sm-6">
-                                    <input type="text" name="package_duration" placeholder="Package Name" required="" class="dino-input">
+                                    <input type="text" name="package_duration" placeholder="Duration" required="" class="dino-input">
                                 </div>
                             </div><br />
 
                             <div class="row">
                                 <div class="col-sm-2">Contact Information</div>
                                 <div class="col-sm-6">
-                                    <input type="text" pattern="[0-9]*" name="package_contact" placeholder="Package Name" required="" class="dino-input">
+                                    <input type="text" pattern="[0-9]*" name="package_contact" placeholder="Contact" required="" class="dino-input">
                                 </div>
                             </div><br />
 

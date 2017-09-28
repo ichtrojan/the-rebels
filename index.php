@@ -17,6 +17,7 @@
         <link href="public/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
         <link href="public/css/layout.min.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="public/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="public/css/mix.css">
     </head>
 
     <body id="body" data-spy="scroll" data-target=".header">
