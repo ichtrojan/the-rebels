@@ -50,7 +50,6 @@
                 <div class="col-sm-3">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
                         <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
                         <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
                     </ul>

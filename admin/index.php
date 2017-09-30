@@ -31,12 +31,11 @@
                     <h1 class="lead">Preview Upload packages</h1>
                     <hr />
                 </div>
-
             </div>
             <div class="row margin-b-40">
                 <div class="col-md-12">
                     <div class="form">
-                        <form class="form" role="form" method="post" enctype="multipart/form-data">
+                        <form class="form" role="form" action="../__factory/upload-packages.php" method="post" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-sm-2">What is the package name?</div>
                                 <div class="col-sm-6">
