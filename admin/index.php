@@ -64,7 +64,7 @@
                             <div class="row">
                                 <div class="col-sm-2">Photo's of packages</div>
                                 <div class="col-sm-6">
-                                    <input type="file" name="package_avatar" required="" class="dino-input">
+                                    <input type="file" name="package_avatar" required="" class="dino-input" multiple>
                                 </div>
                             </div> <br />
 

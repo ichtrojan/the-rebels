@@ -3,10 +3,11 @@
 function processImages($images)
 {
 	#check if images are multiple images...
-	foreach ($image as $images) {
+	foreach ($images as $image) {
 		# code...
 		# process images here...
-		
+		print_r($image);
+
 	}
 }
 

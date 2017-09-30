@@ -12,11 +12,9 @@ $package_duration = $_POST['package_duration'];
 $package_contact = $_POST['package_contact'];
 
 # file data
-$package_avatar = $_FILE['package_avatar'];
+$package_avatar = $_FILES['package_avatar'];
 $processed_images = processImages($package_avatar);
 
-# process packages images
-$packages_images = processImages($package_avatar);
 
 # packages to arrays
 $packages = array(
@@ -32,5 +30,8 @@ $packages = array(
 # create new instance of card
 $save_package = new UploadPackages($packages);
 $save_package->save();
+
+
+echo 'All functionality passed';
 
 ?>
