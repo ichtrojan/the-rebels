@@ -12,9 +12,22 @@ $package_duration = $_POST['package_duration'];
 $package_contact = $_POST['package_contact'];
 
 # file data
-$package_avatar = $_FILES['package_avatar'];
-$processed_images = processImages($package_avatar);
+$package_avatar = $_FILES['files'];
 
+# upload images 
+$images_arr = array();
+$images_name = array();
+foreach($_FILES['files']['name'] as $key=>$val){
+    //upload and stored images
+    $target_dir = "../storage/uploads/";
+    $ext = substr($_FILES['files']['name'][$key], strpos($_FILES['files']['name'][$key], '.'));
+    $new_name = time().rand(000,999).$ext;
+    $target_file = $target_dir.$new_name;
+    if(move_uploaded_file($_FILES['files']['tmp_name'][$key],$target_file)){
+        $images_arr[] = $target_file;
+        array_push($images_name, $new_name);
+    }
+}
 
 # packages to arrays
 $packages = array(
@@ -24,14 +37,10 @@ $packages = array(
 	'location' => $package_location,
 	'duration' => $package_duration,
 	'contact' => $package_contact,
-	'images' => $processed_images
+	'images' => $images_name
 );
 
 # create new instance of card
-$save_package = new UploadPackages($packages);
-$save_package->save();
-
-
-echo 'All functionality passed';
-
+$save_package = new UploadPackages();
+$save_package->save($packages);
 ?>

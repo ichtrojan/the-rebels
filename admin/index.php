@@ -21,6 +21,30 @@
     </head>
 
     <body id="body" data-spy="scroll" data-target=".header">
+        <header class="header navbar-fixed-top">
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+
+                    </div>
+
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <div class="top-nav" align="right">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="all-packages">view all package</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <div class="content-lg container">
             <div class="row">
                 <div class="col-md-8">
@@ -64,7 +88,7 @@
                             <div class="row">
                                 <div class="col-sm-2">Photo's of packages</div>
                                 <div class="col-sm-6">
-                                    <input type="file" name="package_avatar" required="" class="dino-input" multiple>
+                                    <input type="file" name="files[]" required="" class="dino-input" multiple>
                                 </div>
                             </div> <br />
 

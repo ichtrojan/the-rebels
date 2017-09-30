@@ -2,7 +2,7 @@
 /**
 * Upload Packages
 */
-class UploadPackages extends DBconnect
+class UploadPackages
 {
 	private $host = "localhost";
 	private $user = "root";
@@ -30,9 +30,13 @@ class UploadPackages extends DBconnect
 		}
 	}
 
-	public function save()
+	public function save($packages)
 	{
+
 		// save to database..
+		// $query = " INSERT INTO packages(Null, )";
+		// $this->dbh->exec($query);
+		echo "Packages has been save !";
 	}
 }
 ?>
