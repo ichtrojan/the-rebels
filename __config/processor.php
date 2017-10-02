@@ -46,7 +46,7 @@ class UploadPackages
 	public function lastUpload ()
 	{
 		// fetch last upload
-		$query = " SELECT * FROM packages LIMIT 1 ";
+		$query = " SELECT * FROM packages ORDER by id DESC LIMIT 1  ";
 		$query_run = mysqli_query($this->plug, $query);
 		if(!$query_run){
 			// return error if query fail
