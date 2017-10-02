@@ -21,13 +21,14 @@ class UploadPackages
 		}
 	}
 
+	// save upload packages
 	public function save ($name, $desc, $type, $price, $location, $duration, $contact, $images)
 	{
 		// tags and dates
 		$tags = " Vaction, Holidays, X-mass, Trips "; // it can be anything if we embed it on the form as check box
 		$date = time();
 
-		// convert to strings
+		// convert to strings all images in arrays
 		$images = implode(',', $images);
 
 		// insert data into the packages table
@@ -38,11 +39,32 @@ class UploadPackages
 		if(!$query_run){
 			echo "Error running insert query ".mysqli_error($this->plug);
 		}else{
-			$back = $_SERVER['HTTP_REFERER'];
-			header('Location: '.$back);
+			// get id before creating gallery
+			$query = " SELECT id FROM packages WHERE(name ='".$name."' and description ='".$desc."' ) ";
+			$query_run = mysqli_query($this->plug, $query);
+			if(!$query_run){
+				echo 'Error running select query '.mysqli_error($this->plug);
+			}else{
+				while ($result = mysqli_fetch_assoc($query_run)) {
+					# code...
+					$id = $result['id'];
+
+					// create Gallery now
+					$query = " INSERT INTO gallery(package_id, images, dates) ";
+					$query .= " VALUES('".$id."', '".$images."', '".$dates."') ";
+					$query_run = mysqli_query($this->plug, $query);
+					if(!$query_run){
+						echo "Error running insert gallery query ".mysqli_error($this->plug);
+					}else{
+						$back = $_SERVER['HTTP_REFERER'];
+						header('Location: '.$back);
+					}
+				}
+			}
 		}
 	}
 
+	// save upload packages
 	public function lastUpload ()
 	{
 		// fetch last upload
@@ -60,6 +82,80 @@ class UploadPackages
 			{
 				return $packages;
 			}		
+		}
+	}
+
+	// save upload packages
+	public function load ($id)
+	{
+		// fetch last upload
+		$query = " SELECT * FROM packages WHERE(id = '".$id."') ";
+		$query_run = mysqli_query($this->plug, $query);
+		if(!$query_run){
+			// return error if query fail
+			echo "Error running query last upload ";
+		}elseif(!mysqli_num_rows($query_run)){
+			// last upload not found
+			echo "No packages has been uploaded yet...!";
+		}else{
+			// fetch result into arrays
+			while ($packages = mysqli_fetch_array($query_run))
+			{
+				return $packages;
+			}		
+		}
+	}
+
+	// update changes from edit
+	public function update($id, $name, $desc, $type, $price, $location, $duration, $contact)
+	{
+		// edit packages
+		$query = " UPDATE packages SET name ='".$name."', ";
+		$query .= " description ='".$desc."', type ='".$type."', ";
+		$query .= " price = '".$price."', location ='".$location."', ";
+		$query .= " duration ='".$duration."', contact ='".$contact."' ";
+		$query .= " WHERE(id = '".$id."') ";
+		$query_run = mysqli_query($this->plug, $query);
+		if(!$query_run){
+			echo 'Error updating the packages '.mysqli_error($this->plug);
+		}else{
+			$back = $_SERVER['HTTP_REFERER'];
+			header('Location: '.$back);
+		}
+	}
+
+	// load last edited card
+	public function loadLastEdit($id)
+	{
+		// fetch last upload
+		$query = " SELECT * FROM packages WHERE(id ='".$id."') ";
+		$query_run = mysqli_query($this->plug, $query);
+		if(!$query_run){
+			// return error if query fail
+			echo "Error running query last upload ";
+		}elseif(!mysqli_num_rows($query_run)){
+			// last upload not found
+			echo "No packages has been uploaded yet...!";
+		}else{
+			// fetch result into arrays
+			while ($packages = mysqli_fetch_array($query_run))
+			{
+				return $packages;
+			}		
+		}	
+	}
+
+	// delete card
+	public function delete($id)
+	{
+		// delete packages
+		$query = " DELETE FROM packages WHERE(id ='".$id."') ";
+		$query_run = mysqli_query($this->plug, $query);
+		if(!$query_run){
+			echo "Fail to run delete query";
+		}else{
+			$back = $_SERVER['HTTP_REFERER'];
+			header('Location: '.$back);
 		}
 	}
 }

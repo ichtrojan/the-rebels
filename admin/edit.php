@@ -1,7 +1,42 @@
+<?php
+// include functions and processor
+require "../__config/processor.php";
+require "../__config/functions.php";
+
+// get packages request
+if($_GET['pid'])
+{
+    // assign package id
+    $p_id = $_GET['pid'];
+    if(!is_numeric($p_id))
+    {
+        $back = $_SERVER['HTTP_REFERER'];
+        header('Location: '.$back);
+    }else{
+        $packages = new UploadPackages();
+        $packages = $packages->load($p_id);
+
+        // assign variables
+        $id = $packages['id'];
+        $name = $packages['name'];
+        $description = $packages['description'];
+        $type = $packages['type'];
+        $price = $packages['price'];
+        $location = $packages['location'];
+        $duration = $packages['duration'];
+        $contact = $packages['contact'];
+
+        // tags and date
+        $tags = $packages['tags'];
+        $dates = $packages['dates'];
+    }
+}else{
+    $back = $_SERVER['HTTP_REFERER'];
+    header('Location: '.$back);
+}
+?>
 <!DOCTYPE html>
-
 <html lang="en" class="no-js">
-
     <head>
         <meta charset="utf-8"/>
         <title>Holidays and Vacation Packages</title>
@@ -52,18 +87,19 @@
                     <h1 class="lead">Create Packages</h1>
                     <hr />
                     <div class="form">
-                        <form class="form" role="form" action="../__factory/upload-packages.php" method="post" enctype="multipart/form-data">
+                        <form class="form" action="../__factory/update-package.php" method="post" enctype="multipart/form-data">
+                            <input type="hidden" id="pid" name="package_id" value="<?= $id; ?>">
                             <div class="row">
                                 <div class="col-sm-2">What is the package name?</div>
                                 <div class="col-sm-6">
-                                    <input type="text" name="package_name" placeholder="Package Name" required="" class="dino-input">
+                                    <input type="text" name="package_name" placeholder="Package Name" required="" class="dino-input" value="<?= $name; ?>">
                                 </div>
                             </div><br />
 
                             <div class="row">
                                 <div class="col-sm-2">Tell us more about this package</div>
                                 <div class="col-sm-6">
-                                    <textarea name="package_desc" cols="60" rows="5" class="dino-input" placeholder="Tell us about this package" required=""></textarea>
+                                    <textarea name="package_desc" cols="60" rows="5" class="dino-input" placeholder="Tell us about this package" required=""><?= $description; ?></textarea>
                                 </div>
                             </div> <br />
 
@@ -79,57 +115,51 @@
                             </div> <br />
 
                             <div class="row">
-                                <div class="col-sm-2">Photo's of packages</div>
-                                <div class="col-sm-6">
-                                    <input type="file" name="files[]" required="" class="dino-input" multiple>
-                                </div>
-                            </div> <br />
-
-                            <div class="row">
                                 <div class="col-sm-2">Package price ?</div>
                                 <div class="col-sm-6">
-                                    <input type="number" name="package_price" placeholder="000,000,00" required="" class="dino-input">
+                                    <input type="number" name="package_price" placeholder="000,000,00" required="" class="dino-input" value="<?= $price; ?>">
                                 </div>
                             </div> <br />
 
                             <div class="row">
                                 <div class="col-sm-2">Package Location</div>
                                 <div class="col-sm-6">
-                                   <textarea class="dino-input" name="package_location" cols="60" rows="2" placeholder="Location " required=""></textarea>
+                                   <textarea class="dino-input" name="package_location" cols="60" rows="2" placeholder="Location " required=""><?= $location; ?></textarea>
                                 </div>
                             </div><br />
 
                             <div class="row">
                                 <div class="col-sm-2">Package Duration</div>
                                 <div class="col-sm-6">
-                                    <input type="text" name="package_duration" placeholder="Duration" required="" class="dino-input">
+                                    <input type="text" name="package_duration" placeholder="Duration" required="" class="dino-input" value="<?= $duration; ?>">
                                 </div>
                             </div><br />
 
                             <div class="row">
                                 <div class="col-sm-2">Contact Information</div>
                                 <div class="col-sm-6">
-                                    <input type="text" pattern="[0-9]*" name="package_contact" placeholder="Contact" required="" class="dino-input">
+                                    <input type="text" pattern="[0-9]*" name="package_contact" placeholder="Contact" required="" class="dino-input" value="<?= $contact; ?>">
                                 </div>
                             </div><br />
 
                             <div class="row">
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-6">
-                                  <button class="btn btn-info">Add Package</button>
+                                  <button class="btn btn-info">Save and Update Package</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h1 class="lead">Preview Upload packages</h1>
+                    <h1 class="lead">Preview last edited package</h1>
                     <hr />
-                    <div id="load-last-upload"></div>
+                    <div id="load-last-edit"></div>
                 </div>
             </div>
             <script type="text/javascript">
-                $("#load-last-upload").load("../__factory/load-last-upload.php");
+                var id = $("#pid").val(); // get hidden id from form.
+                $("#load-last-edit").load("../__factory/load-last-edit.php?id="+id);
             </script>
         </div>
     </body>

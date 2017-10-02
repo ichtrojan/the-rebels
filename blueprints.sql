@@ -25,3 +25,10 @@ create table newsletter(
 	status varchar(255) not null,
 	date varchar(255) not null
 );
+
+create table gallery(
+	id int(11) auto_increment key,
+	package_id varchar(255) not null,
+	images varchar(255) not null,
+	dates varchar(255) not null
+);
