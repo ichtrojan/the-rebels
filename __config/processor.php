@@ -11,7 +11,8 @@ class UploadPackages
 
 	protected $plug;
 
-	public function __construct() {
+	public function __construct() 
+	{
 		// database connections
 		$this->plug = mysqli_connect($this->host, $this->user, $this->pass, $this->db);
 
@@ -20,7 +21,8 @@ class UploadPackages
 		}
 	}
 
-	public function save($name, $desc, $type, $price, $location, $duration, $contact, $images){
+	public function save ($name, $desc, $type, $price, $location, $duration, $contact, $images)
+	{
 		// tags and dates
 		$tags = " Vaction, Holidays, X-mass, Trips "; // it can be anything if we embed it on the form as check box
 		$date = time();
@@ -38,6 +40,26 @@ class UploadPackages
 		}else{
 			$back = $_SERVER['HTTP_REFERER'];
 			header('Location: '.$back);
+		}
+	}
+
+	public function lastUpload ()
+	{
+		// fetch last upload
+		$query = " SELECT * FROM packages LIMIT 1 ";
+		$query_run = mysqli_query($this->plug, $query);
+		if(!$query_run){
+			// return error if query fail
+			echo "Error running query last upload ";
+		}elseif(!mysqli_num_rows($query_run)){
+			// last upload not found
+			echo "No packages has been uploaded yet...!";
+		}else{
+			// fetch result into arrays
+			while ($packages = mysqli_fetch_array($query_run))
+			{
+				return $packages;
+			}		
 		}
 	}
 }

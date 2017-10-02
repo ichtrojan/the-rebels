@@ -18,6 +18,7 @@
         <link href="../public/css/layout.min.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="../public/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="../public/css/mix.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
     <body id="body" data-spy="scroll" data-target=".header">
@@ -48,18 +49,10 @@
             </nav>
         </header>
         <div class="content-lg container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h1 class="lead">Create Card for packages</h1>
-                    <hr />
-                </div>
-                <div class="col-md-4">
-                    <h1 class="lead">Preview Upload packages</h1>
-                    <hr />
-                </div>
-            </div>
             <div class="row margin-b-40">
-                <div class="col-md-12">
+                <div class="col-md-8">
+                    <h1 class="lead">Create Packages</h1>
+                    <hr />
                     <div class="form">
                         <form class="form" role="form" action="../__factory/upload-packages.php" method="post" enctype="multipart/form-data">
                             <div class="row">
@@ -131,7 +124,15 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <h1 class="lead">Preview Upload packages</h1>
+                    <hr />
+                    <div id="load-last-upload"></div>
+                </div>
             </div>
+            <script type="text/javascript">
+                $("#load-last-upload").load("../__factory/load-last-upload.php");
+            </script>
         </div>
     </body>
 </html>
