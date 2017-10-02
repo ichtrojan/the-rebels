@@ -5,14 +5,12 @@ require "../__config/functions.php";
 
 # request all packages from Form
 $package_name = $_POST['package_name'];
+$package_desc = $_POST['package_desc'];
 $package_type = $_POST['package_type'];
 $package_price = $_POST['package_price'];
 $package_location = $_POST['package_location'];
 $package_duration = $_POST['package_duration'];
 $package_contact = $_POST['package_contact'];
-
-# file data
-$package_avatar = $_FILES['files'];
 
 # upload images 
 $images_arr = array();
@@ -29,18 +27,15 @@ foreach($_FILES['files']['name'] as $key=>$val){
     }
 }
 
-# packages to arrays
-$packages = array(
-	'name' => $package_name,
-	'type' => $package_type,
-	'price' => $package_price,
-	'location' => $package_location,
-	'duration' => $package_duration,
-	'contact' => $package_contact,
-	'images' => $images_name
+# ser files name
+$packages_images = $images_name;
+
+# create new instance of card and save
+$save_package = new UploadPackages();
+$save_package->save(
+    $package_name, $package_desc, $package_type, 
+    $package_price, $package_location, $package_duration, 
+    $package_contact, $packages_images
 );
 
-# create new instance of card
-$save_package = new UploadPackages();
-$save_package->save($packages);
 ?>

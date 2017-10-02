@@ -1,8 +1,11 @@
 <?php
 // include custom build in functions
-function processImages($images)
+function sanitizeData($data)
 {
+	$data = strip_tags($data);
+	$data = trim($data);
 	
+	return $data;
 }
 
 ?>

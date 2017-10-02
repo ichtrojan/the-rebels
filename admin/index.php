@@ -37,7 +37,9 @@
                         <div class="menu-container">
                             <div class="top-nav" align="right">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="all-packages">view all package</a></li>
+                                    <li><a href="all-packages">view</a></li>
+                                    <li><a href="all-packages">edit</a></li>
+                                    <li><a href="all-packages">create</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -70,7 +72,7 @@
                             <div class="row">
                                 <div class="col-sm-2">Tell us more about this package</div>
                                 <div class="col-sm-6">
-                                    <textarea cols="60" rows="5" class="dino-input" placeholder="Tell us about this package" required=""></textarea>
+                                    <textarea name="package_desc" cols="60" rows="5" class="dino-input" placeholder="Tell us about this package" required=""></textarea>
                                 </div>
                             </div> <br />
 

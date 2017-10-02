@@ -1,42 +1,35 @@
 <?php
+// inlcude the database class:
+require ("database.php");
+
 /**
 * Upload Packages
 */
-class UploadPackages
+class UploadPackages extends Database
 {
-	private $host = "localhost";
-	private $user = "root";
-	private $pass = "";
-	private $dbname = "test_db";
-
-	private $dbh;
-	private $error;
+	protected $plug;
 
 	public function __construct() {
-		// Set DSN
-		$dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
-		// Set options
-		$options = array(
-			PDO::ATTR_PERSISTENT => true,
-			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-		);
-		// Create a new PDO instanace
-		try {
-			$this->dbh = new PDO($dsn, $this->user, $this->pass, $options);
-		}
-		// Catch any errors
-		 catch (PDOException $e) {
-			$this->error = $e->getMessage();
-		}
+		// call the database construct and plug the connection 
+		parent::__construct();
+		$this->plug = Database::plug();
+
 	}
 
-	public function save($packages)
-	{
+	public function save($name, $desc, $type, $price, $location, $duration, $contact, $images){
+		// tags and dates
+		$tags = "";
+		$date = time();		
 
-		// save to database..
-		// $query = " INSERT INTO packages(Null, )";
-		// $this->dbh->exec($query);
-		echo "Packages has been save !";
+		// insert data into the packages table
+		$query = " INSERT INTO packages(NULL, $name, $desc, $type, $price, $location, $duration, $contact, $images, $tags, $date) ";
+		$query_run = mysqli_query($this->plug, $query);
+		if(!$query_run){
+			echo "Error running insert query ".mysqli_error($this->plug);
+		}else{
+			$back = $_SERVER['HTTP_REFERER'];
+			header('Location: '.$back);
+		}
 	}
 }
 ?>
