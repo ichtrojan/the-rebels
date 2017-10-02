@@ -2,7 +2,7 @@
 /**
 * Upload Packages
 */
-class UploadPackages extends Database
+class UploadPackages
 {
 	protected $host = "localhost";
 	protected $user = "root";
@@ -22,14 +22,16 @@ class UploadPackages extends Database
 
 	public function save($name, $desc, $type, $price, $location, $duration, $contact, $images){
 		// tags and dates
-		$tags = "";
+		$tags = " Vaction, Holidays, X-mass, Trips "; // it can be anything if we embed it on the form as check box
 		$date = time();
 
 		// convert to strings
 		$images = implode(',', $images);
 
 		// insert data into the packages table
-		$query = " INSERT INTO packages(NULL, $name, $desc, $type, $price, $location, $duration, $contact, $images, $tags, $date) ";
+		$query = " INSERT INTO packages(name, description, type, price, location, duration, contact, images, tags, dates) ";
+		$query .= " VALUES('".$name."', '".$desc."', '".$type."', '".$price."', ";
+		$query .= " '".$location."', '".$duration."', '".$contact."', '".$images."', '".$tags."', '".$date."' )";
 		$query_run = mysqli_query($this->plug, $query);
 		if(!$query_run){
 			echo "Error running insert query ".mysqli_error($this->plug);
