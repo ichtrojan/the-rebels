@@ -51,7 +51,7 @@ class UploadPackages
 
 					// create Gallery now
 					$query = " INSERT INTO gallery(package_id, images, dates) ";
-					$query .= " VALUES('".$id."', '".$images."', '".$dates."') ";
+					$query .= " VALUES('".$id."', '".$images."', '".$date."') ";
 					$query_run = mysqli_query($this->plug, $query);
 					if(!$query_run){
 						echo "Error running insert gallery query ".mysqli_error($this->plug);

@@ -17,8 +17,10 @@ $location = $packages['location'];
 $duration = $packages['duration'];
 $contact = $packages['contact'];
 
-// files
+// images and conversion
 $images = $packages['images'];
+$images = explode(',', $images);
+
 
 // tags and date
 $tags = $packages['tags'];
@@ -29,7 +31,21 @@ $dates = $packages['dates'];
 <div class="row">
 	<div class="col-sm-12 sm-margin-b-50">
 	    <div class="margin-b-20">
-	        <img class="img-responsive" src="../storage/uploads/<?= $images; ?>" alt="Latest Products Image">
+	        <img class="img-responsive" src="../storage/uploads/<?= $images[0]; ?>" alt="Latest Package Image">
+	        <br />
+	        <div class="row">
+		        <?php
+		        	$total_images = count($images);
+		        	for ($i = 0; $i < $total_images; $i++) {
+		        		# code...
+		        		echo '
+		        			<div class="col-md-4">
+		        				<img class="img-responsive" src="../storage/uploads/'.$images[$i].'" alt="Latest Package Image">
+		        			</div>
+		        		';
+		        	}
+		        ?>	
+	        </div>
 	        <div class="price-tag"><i class="fa fa-tag"></i> &#8358; <?= $price; ?> </div>
 	    </div>
 	    <h4><a href="#"><?= $name; ?></a> <span class="text-uppercase margin-l-20"><?= $duration; ?></span></h4>

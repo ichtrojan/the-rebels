@@ -33,12 +33,10 @@
                     </div>
 
                     <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
+                        <div class="menu-container" >
                             <div class="top-nav" align="right">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="all-packages">view</a></li>
-                                    <li><a href="all-packages">edit</a></li>
-                                    <li><a href="all-packages">create</a></li>
+                                    <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                                 </ul>
                             </div>
                         </div>
