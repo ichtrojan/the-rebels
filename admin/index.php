@@ -22,7 +22,7 @@
     </head>
 
     <body id="body" data-spy="scroll" data-target=".header">
-        <header class="header navbar-fixed-top">
+        <header class="header navbar-fixed-top" style="background-color: #999;">
             <nav class="navbar" role="navigation">
                 <div class="container">
                     <div class="menu-container js_nav-item">
@@ -37,7 +37,7 @@
                             <div class="top-nav" align="right">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                                    <li><a href="view.php"><i class="fa fa-dashboard"></i> View All</a></li>
+                                    <li><a href="view-packages.php"><i class="fa fa-dashboard"></i> View All</a></li>
                                 </ul>
                             </div>
                         </div>
