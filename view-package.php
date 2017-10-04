@@ -129,7 +129,7 @@ if($_GET['pid'])
                 </div>
             </div>
         </div>
-        <?php include 'includes/pricing.php';?>
+        <?php //include 'includes/pricing.php';?>
         <?php include 'includes/footer.php';?>
     </body>
 </html>
