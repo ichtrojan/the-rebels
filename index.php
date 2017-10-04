@@ -18,6 +18,7 @@
         <link href="public/css/layout.min.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="public/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="public/css/mix.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
     <body id="body" data-spy="scroll" data-target=".header">

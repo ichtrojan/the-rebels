@@ -15,121 +15,14 @@
         </div>
 
         <br />
-
-        <div class="row">
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/2.jpg" alt="Latest Products Image">
-                    <div class="price-tag"><i class="fa fa-tag"></i> &#8358; 100,500.00 </div>
-                </div>
-                <h4><a href="#">Obudu Weekly Special</a> <span class="text-uppercase margin-l-20">3 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
+        <div class="row margin-b-40">
+            <div class="col-md-12">
+               <div id="load-all"></div> 
             </div>
-            <!-- End Latest Products -->
-
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/02.jpg" alt="Latest Products Image">
-                    <div class="price-tag"><i class="fa fa-tag"></i> &#8358; 160,500.00 </div>
-                </div>
-                <h4><a href="#">Holy Pilgrimage to Makkah</a> <span class="text-uppercase margin-l-20">5 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
-
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/1.jpg" alt="Latest Products Image">
-                    <div class="price-tag"><i class="fa fa-tag"></i> &#8358; 120,000.00 </div>
-                </div>
-                <h4><a href="#">Destination Singapore</a> <span class="text-uppercase margin-l-20">4 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
         </div>
-        <br />
-        <div class="row">
-          <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/3.jpg" alt="Latest Products Image">
-                    <div class="price-tag"><i class="fa fa-tag"></i> &#8358; 230,000.00 </div>
-                </div>
-                <h4><a href="#">Explore Ocean view</a> <span class="text-uppercase margin-l-20">4 Days</span></h4>
-                <p>Amangiri, ‘peaceful mountain’, is situated on 243 hectares (600 acres) in Canyon Point, Southern Utah, close to the border with Arizona. The resort is tucked into a protected valley with...</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/1.jpg" alt="Latest Products Image">
-                    <div class="price-tag"><i class="fa fa-tag"></i> &#8358; 160,000.00 </div>
-                </div>
-                <h4><a href="#">Obudu Weekly Special</a> <span class="text-uppercase margin-l-20">3 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
-
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/4.jpg" alt="Latest Products Image">
-                    <div class="price-tag"><i class="fa fa-tag"></i> &#8358; 230,000.00 </div>
-                </div>
-                <h4><a href="#">Holy Pilgrimage to Makkah</a> <span class="text-uppercase margin-l-20">5 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
-        </div>
-        <br />
-        <div class="row">
-
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/5.jpg" alt="Latest Products Image">
-                    <div class="price-tag"><i class="fa fa-tag"></i> &#8358; 180,500.00 </div>
-                </div>
-                <h4><a href="#">Destination Singapore</a> <span class="text-uppercase margin-l-20">4 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
-
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/01.jpg" alt="Latest Products Image">
-                    <div class="price-tag"> &#8358; 110,000.00 </div>
-                </div>
-                <h4><a href="#">City of Johannesburg</a> <span class="text-uppercase margin-l-20">4 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
-
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <img class="img-responsive" src="public/img/970x647/2.jpg" alt="Latest Products Image">
-                    <div class="price-tag"> &#8358; 100,500.00 </div>
-                </div>
-                <h4><a href="#">Explore Calabar Canival</a> <span class="text-uppercase margin-l-20">4 Days</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Details</a>
-            </div>
-            <!-- End Latest Products -->
-        </div>
-        <!--// end row -->
+        <script type="text/javascript">
+            $("#load-all").load("__factory/load-index-packages.php");
+        </script>
     </div>
 </div>
 <!-- End Latest Products -->
