@@ -24,7 +24,6 @@
     	<?php include 'includes/navigation.php';?>
         <?php include 'includes/slider.php';?>
         <?php include 'includes/products.php';?>
-        <?php include 'includes/pricing.php';?>
         <?php include 'includes/footer.php';?>
     </body>
 </html>
