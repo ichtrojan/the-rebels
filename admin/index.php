@@ -37,6 +37,7 @@
                             <div class="top-nav" align="right">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                                    <li><a href="view.php"><i class="fa fa-dashboard"></i> View All</a></li>
                                 </ul>
                             </div>
                         </div>
