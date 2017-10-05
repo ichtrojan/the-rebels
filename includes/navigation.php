@@ -79,23 +79,12 @@
                         <!--  -->                        
                         <ul class="list-inline links">
                             <a class=""><img src="public/svg/logo.svg" class="img" height=""></a>
-                            <li><a href="#">Company</a></li>         
-                            <li><a href="#">About us</a></li>         
-                            <li><a href="#">Work for us</a></li>             
-                            <li><a href="#">Contact us</a></li>              
-                            <li><a href="#">Press, Trade and Advertising</a></li>              
-                            <li><a href="#">Terms and Conditions</a></li>              
-                            <li><a href="#">Privacy policy</a></li>                        
+                            <li><a href="#">Book Hotels</a></li>         
+                            <li><a href="#">Adventure Packages</a></li>         
+                            <li><a href="#">Guides</a></li>             
+                            <li><a href="#">Tourist Destinations</a></li>                        
                             <a class="callus pull-right">CALL US <br>+234 700 880 8800 </a>
                         </ul>
-
-                        
-
-
-
-
-
-
                     </div>
                 </div>
             </div>

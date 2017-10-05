@@ -34,20 +34,22 @@
                 <div class="col-sm-2 sm-margin-b-30">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a href="#body">Home</a></li>
-                        <li class="footer-list-item"><a href="#about">Team</a></li>
-                        <li class="footer-list-item"><a href="#work">Credentials</a></li>
-                        <li class="footer-list-item"><a href="#contact">Contact</a></li>
-                    </ul>
+                        <li ><a href="#body">Home</a></li>
+                        <li class="footer-list-item"><a href="#">Company</a></li>         
+                        <li class="footer-list-item"><a href="#">About us</a></li>         
+                        <li class="footer-list-item"><a href="#">Work for us</a></li>             
+                        <li class="footer-list-item"><a href="#">Contact us</a></li>              
+                        <li class="footer-list-item"><a href="#">Press, Trade and Advertising</a></li>              
+                        <li class="footer-list-item"><a href="#">Terms and Conditions</a></li>              
+                        <li class="footer-list-item"><a href="#">Privacy policy</a></li>      
+                     </ul>
                     <!-- End List -->
+                    
                 </div>
                 <div class="col-sm-2 sm-margin-b-30">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a href="#">Twitter</a></li>
-                        <li class="footer-list-item"><a href="#">Facebook</a></li>
-                        <li class="footer-list-item"><a href="#">Instagram</a></li>
-                        <li class="footer-list-item"><a href="#">YouTube</a></li>
+                        <li class="footer-list-item"><a href="#"></a></li>
                     </ul>
                     <!-- End List -->
                 </div>
