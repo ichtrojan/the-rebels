@@ -23,7 +23,6 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
         </div>        
     </div>
 </div>
@@ -48,21 +47,3 @@
     }
 
 </style>
-=======
-        </div>
-        <div class="item">
-            <img class="img-responsive" src="http://res.cloudinary.com/ichtrojan/image/upload/q_auto/v1507213107/02_dwm5dx.jpg" alt="Slider Image">
-            <div class="container">
-                <div class="carousel-centered">
-                    <div class="margin-b-40">
-                        <h2 class="carousel-title">Personal Approach</h2>
-                        <p class="color-white">Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
-                    </div>
-                    <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Take a Tour</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--========== SLIDER ==========-->
->>>>>>> d6f0f216e5db3ee4fa67e4192b45575a01434a50
