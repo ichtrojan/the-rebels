@@ -49,7 +49,16 @@
                 <div class="col-sm-2 sm-margin-b-30">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a href="#"></a></li>
+                        <li class="footer-list-item"><a href="#">Top Cities</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Lagos</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Calabar</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Abuja</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Ikoyi</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Port Harcourt</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Owerri</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Maryland</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Abia</a></li>
+                        <li class="footer-list-item"><a href="#">Hotels in Jos</a></li>
                     </ul>
                     <!-- End List -->
                 </div>
