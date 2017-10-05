@@ -18,6 +18,7 @@
         <link href="public/css/layout.min.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="public/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="public/css/mix.css">
+        <link rel="stylesheet" type="text/css" href="public/css/customizedbreadcrumb.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
@@ -27,4 +28,5 @@
         <?php include 'includes/products.php';?>
         <?php include 'includes/footer.php';?>
     </body>
+    
 </html>

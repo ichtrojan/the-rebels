@@ -1,3 +1,10 @@
+<style>
+    .bookbtn{
+        padding:10 40px;
+        background:#00AEFF;
+    }
+</style>
+
 <!--========== News Letters ==========-->
 <footer class="footer">
     <!-- Links -->
@@ -6,23 +13,20 @@
             <div class="row">
                 <div class="col-sm-12 sm-margin-b-30" align="center">
                     <!-- List -->
-                    <h3>Shhh.... Don't tell anyone</h3>
-                    <p>Enter your email address to receive newsletters our latest packages</p>
-                    <input type="email" placeholder="Enter your email address" name="email" class="dino-input">
-                    <button class="btn btn-info">Subcribe</button>
-                    <!-- End List -->
+                  <button class="btn btn-lg btn-info bookbtn">Book Hotels Online</button>
+                    <!-- End List -->                    
                 </div>
-            </div>
+                </div><div class="divider" style="padding:20px 0px; border-bottom:2px solid #ccc;"></div>            </div>
             <!--// end row -->
         </div>
-    </div>
+               
     <!-- End Links -->
 </footer>
 <!--========== END News Letters ==========-->
 
 
 <!--========== FOOTER ==========-->
-<footer class="footer">
+<footer class="footer" style="background:#EFEFEF;">
     <!-- Links -->
     <div class="section-seperator">
         <div class="content-md container">
@@ -61,19 +65,7 @@
     </div>
     <!-- End Links -->
 
-    <!-- Copyright -->
-    <div class="content container">
-        <div class="row">
-            <div class="col-xs-6">
-                <img class="footer-logo" src="public/svg/logo.svg" alt="flameonepage Logo">
-            </div>
-            <div class="col-xs-6 text-right">
-                <p class="margin-b-0"><a class="fweight-700" href="#">HNG Internship </a> Theme Powered by: <a class="fweight-700" href="http://hng.fun/">The-Rebels</a></p>
-            </div>
-        </div>
-        <!--// end row -->
-    </div>
-    <!-- End Copyright -->
+
 </footer>
 <!--========== END FOOTER ==========-->
 
