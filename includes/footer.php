@@ -3,6 +3,12 @@
         padding:10 40px;
         background:#00AEFF;
     }
+
+    ul>li>a{
+        color:#48C5FF;
+        font-size:16px;
+    }
+
 </style>
 
 <!--========== News Letters ==========-->
@@ -31,7 +37,7 @@
     <div class="section-seperator">
         <div class="content-md container">
             <div class="row">
-                <div class="col-sm-2 sm-margin-b-30">
+                <div class="col-sm-3 sm-margin-b-30">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
                         <li ><a href="#body">Home</a></li>
@@ -46,7 +52,7 @@
                     <!-- End List -->
                     
                 </div>
-                <div class="col-sm-2 sm-margin-b-30">
+                <div class="col-sm-3 ">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
                         <li class="footer-list-item"><a href="#">Top Cities</a></li>
@@ -65,8 +71,29 @@
                 <div class="col-sm-3">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
-                        <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
+                        <li class="footer-list-item"><a href="#">Top Attractions</a></li>
+                        <li class="footer-list-item"><a href="#">Spots in Abuja</a></li>
+                        <li class="footer-list-item"><a href="#">Spots in Calabar</a></li>
+                        <li class="footer-list-item"><a href="#">Spots in Lagos</a></li>
+                        <li class="footer-list-item"><a href="#">Spots in Enugu</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div class="col-sm-3">
+                    <!-- List -->
+                    <ul class="list-unstyled footer-list">
+                        <li class="footer-list-item"><a href="#">Top Hotels</a></li>
+                        <li class="footer-list-item"><a href="#">Beni Gold Hotel and Apartments</a></li>
+                        <li class="footer-list-item"><a href="#">Hotel Ibis Lagos Ikeja</a></li>
+                        <li class="footer-list-item"><a href="#">Silver Grandeur Hotel</a></li>
+                        <li class="footer-list-item"><a href="#">Ibis Lagos Airport</a></li>
+                        <li class="footer-list-item"><a href="#">Limeridge Hotel, Lekki</a></li>
+                        <li class="footer-list-item"><a href="#">Beni Apartments</a></li>
+                        <li class="footer-list-item"><a href="#">Grand Ibro Hotel</a></li>
+                        <li class="footer-list-item"><a href="#">Jeromes Garden and Suites</a></li>
+                        <li class="footer-list-item"><a href="#">Transcorp Hotels</a></li>
+                        <li class="footer-list-item"><a href="#">Hotel Ibis Royale</a></li>
                     </ul>
                     <!-- End List -->
                 </div>
