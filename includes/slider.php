@@ -8,7 +8,7 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="img-responsive" src="http://res.cloudinary.com/ichtrojan/image/upload/v1507213107/02_dwm5dx.jpg" alt="Slider Image">
+            <img class="img-responsive" src="http://res.cloudinary.com/ichtrojan/image/upload/q_auto/v1507213107/02_dwm5dx.jpg" alt="Slider Image">
             <div class="container">
                 <div class="carousel-centered">
                     <div class="margin-b-40">
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="item">
-            <img class="img-responsive" src="http://res.cloudinary.com/ichtrojan/image/upload/v1507213107/02_dwm5dx.jpg" alt="Slider Image">
+            <img class="img-responsive" src="http://res.cloudinary.com/ichtrojan/image/upload/q_auto/v1507213107/02_dwm5dx.jpg" alt="Slider Image">
             <div class="container">
                 <div class="carousel-centered">
                     <div class="margin-b-40">
