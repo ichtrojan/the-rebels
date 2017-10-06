@@ -40,7 +40,6 @@
                 <div class="col-sm-3 sm-margin-b-30">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li ><a href="#body">Home</a></li>
                         <li class="footer-list-item"><a href="#">Company</a></li>         
                         <li class="footer-list-item"><a href="#">About us</a></li>         
                         <li class="footer-list-item"><a href="#">Work for us</a></li>             
