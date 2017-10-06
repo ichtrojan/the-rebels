@@ -41,6 +41,8 @@
     }
     .input-group-addon{
         background: #00AEFF;
+        border:0;
+        border-radius:4px;
         border-color: #00AEFF;
         color:white;
         font-size:18px;
